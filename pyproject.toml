@@ -5,7 +5,6 @@ requires = ['meson-python','numpy>=1.24.4', 'ninja', 'wheel']
 [project]
 name = "snowtools-crps"
 version = "0.1"
-dependencies = []
 requires-python = ">=3.6"
 readme = "README.md"
 description = "CRPS calculation for the Snowtools Package."
