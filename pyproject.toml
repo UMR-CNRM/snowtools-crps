@@ -1,0 +1,39 @@
+[build-system]
+build-backend = 'mesonpy'
+requires = ['meson-python','numpy>=1.24.4', 'ninja', 'wheel']
+
+[project]
+name = "snowtools-crps"
+version = "0.1"
+dependencies = []
+requires-python = ">=3.6"
+readme = "README.md"
+description = "CRPS calculation for the Snowtools Package."
+license = {file = "LICENCE.txt"}
+classifiers=[
+    'Operating System :: POSIX :: Linux',
+
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+
+    'Topic :: Scientific/Engineering',
+
+    'License :: CeCILL-C Free Software License Agreement (CECILL-C)',
+]
+authors = [
+    {name = "Snowtools team, leaded by Matthieu Lafaysse, Meteo-France"}
+]
+maintainers = [
+    {name = "Snowtools team, leaded by Matthieu Lafaysse, Meteo-France"}
+]
+
+[project.urls]
+Homepage = "https://github.com/UMR-CNRM/snowtools-crps"
+Repository = "https://github.com/UMR-CNRM/snowtools-crps"
+
+
+
+
