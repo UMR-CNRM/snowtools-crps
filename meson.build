@@ -23,7 +23,7 @@ incdir_numpy = run_command(py,
 crps_source = custom_target('crpsmodule.c',
   input : ['./src/crps.f90'],
   output : 'crpsmodule.c',
-  command : [py, '-m', 'numpy.f2py', '@INPUT@', '-m', 'crps', '--lower'],
+  command : [py, '-m', 'numpy.f2py', '@INPUT@', '-m', 'snowtools_crps', '--lower'],
 )
 
 inc_np = include_directories(incdir_numpy, incdir_f2py)
