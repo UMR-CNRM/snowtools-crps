@@ -20,9 +20,9 @@ incdir_numpy = run_command(py,
     check : true
 ).stdout().strip()
 
-crps_source = custom_target('crpsmodule.c',
+crps_source = custom_target('snowtools_crpsmodule.c',
   input : ['./src/crps.f90'],
-  output : 'crpsmodule.c',
+  output : 'snowtools_crpsmodule.c',
   command : [py, '-m', 'numpy.f2py', '@INPUT@', '-m', 'snowtools_crps', '--lower'],
 )
 
