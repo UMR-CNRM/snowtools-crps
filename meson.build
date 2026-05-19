@@ -29,7 +29,7 @@ crps_source = custom_target('crpsmodule.c',
 inc_np = include_directories(incdir_numpy, incdir_f2py)
 
 py.extension_module(
-   'crps',
+   'snowtools_crps',
    ['./src/crps.f90', crps_source],
    incdir_f2py / 'fortranobject.c',
     include_directories: inc_np,
