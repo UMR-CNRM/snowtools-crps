@@ -8,7 +8,7 @@ project('snowtools-crps', 'c',
 py = import('python').find_installation(pure: false)
 
 
-add_languages('fortran')
+add_languages('fortran', native: false)
 
 incdir_numpy = run_command(py,
   ['-c', 'import os; os.chdir(".."); import numpy; print(numpy.get_include())'],
