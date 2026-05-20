@@ -7,6 +7,7 @@ project('snowtools-crps', 'c',
 
 py = import('python').find_installation(pure: false)
 
+#py_dep = py.dependency()
 
 add_languages('fortran', native: false)
 

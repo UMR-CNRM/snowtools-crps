@@ -1,11 +1,14 @@
 [build-system]
 build-backend = 'mesonpy'
-requires = ['packaging>=23.2', 'meson-python','numpy>=1.24.4', 'ninja', 'wheel']
+requires = ['meson-python','numpy>=1.24.4', 'ninja', 'wheel']
 
 [project]
 name = "snowtools-crps"
 version = "0.1"
 requires-python = ">=3.6"
+#dependencies = [
+#    'packaging>=23.2',
+#]
 readme = "README.md"
 description = "CRPS calculation for the Snowtools Package."
 license = {file = "LICENCE.txt"}
